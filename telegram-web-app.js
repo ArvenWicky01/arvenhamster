@@ -142,7 +142,7 @@
         if (eventData === undefined) {
             eventData = '';
         }
-        console.log('[Telegram.WebView] > postEvent', eventType, eventData);
+        console.log('[ArvenHamster] > Clicked', eventType, eventData);
 
         if (window.TelegramWebviewProxy !== undefined) {
             TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
